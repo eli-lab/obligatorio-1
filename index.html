@@ -1,0 +1,129 @@
+<!--Eli Acher 222894-->
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Eli Acher 222894</title>
+<script src="js/clases.js"></script>
+<script src="js/js.js"></script>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+
+
+
+<body>
+
+<main>
+<header>
+<a id="banner"><img src="imagenes/banner.png" alt="Banner Telecentro" style="max-width:100%"></a>
+</header>
+
+<aside>
+<a href="#mdo">Manejo de Operadores</a><label>  </label><a href="#mdl">Manejo de Llamadas</a><label>  </label><a href="#con">Consultas</a>
+</aside>
+
+<nav>
+<br><a id="mdo"><h1>Manejo de Operadores</h1></a><br>
+<h3>Registro de Operdores</h3>
+<label>Nombre:</label><input type="text" maxlength="20" placeholder="Nombre" id="nombre">
+<label>Edad:</label><input type="number" min="18" max="65" placeholder="edad" id="edad">
+<label>Mail:</label><input type="text" placeholder="mail" id="mail">
+<input id="botonagregar" type="button" value="Agregar">
+<h3>Visualización de Operadores</h3>
+<label>Orden:</label>
+<input type="radio" name="orden" onchange="ordenartablanom();" id="ornombre">
+<label>nombre</label>
+<input type="radio" name="orden" onchange="ordenartablanum();" id="oredad">
+<label>edad</label>
+<ul id="personas">
+	
+</ul>
+
+<br><a id="mdl"><h1>Manejo de Llamadas</h1></a><br>
+<h3>Registro de Llamadas</h3>
+<label>Operador:</label>
+<select placeholder="personas" id="opciones1">
+	
+</select>
+<label>Descripción:</label><input type="text" placeholder="Descripción" id="descripcion">
+<label>Motivo:</label><input type="number" min="1" max="6" value="1" id="motivo">
+<label>Duración:</label><input type="number" min="1" max="60" value="1" id="duracion">
+<label>Celular:</label><input type="text" placeholder="Celular" id="celular">
+<input type="button" value="Agregar" id="botonagregar2">
+<h3>Muestra de Llamadas</h3>
+<label>Orden:</label>
+<input type="radio" name="orden2">
+<label>número</label>
+<input type="radio" name="orden2">
+<label>nombre</label>
+<table>
+<thead>
+	<tr>
+		<th>Numero</th>
+		<th>Operador</th>
+		<th>Descripción</th>
+		<th>Motivo</th>
+		<th>Duración</th>
+		<th>Celular</th>
+	</tr>
+</thead>
+<tbody id="body1">
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td><img src="imagenes/num3.png" alt="motivo 3"></td>
+		<td></td>
+		<td></td>
+	</tr>
+</tbody>
+</table>
+
+<br><a id="con"><h1>Consultas</h1></a><br>
+<h3>Consulta por operador</h3>
+<label>Operador:</label>
+<select>
+	<option>opcion</option>
+</select>
+<input type="button" value="Consultar historia"><br><br>
+<label>Motivos no atendió:</label><label><img src="imagenes/num1.png" alt="motivo 1">, <img src="imagenes/num2.png" alt="motivo 2">, <img src="imagenes/num4.png" alt="motivo 4">, <img src="imagenes/num5.png" alt="motivo 5">, <img src="imagenes/num6.png" alt="motivo 6"></label>
+<p>Llamada más larga: Número 1 Duración 15</p>
+<p>Tiempo promedio de atención: 15</p><br>
+<h3>Consulta por Llamada</h3>
+<label>Duración:</label><input type="number" value="15"><label> </label><input type="button" value="Consultar operadores más llamadas de esa duración">
+<ul><li>Ana González</li></ul>
+<label>Palabras:</label><input type="text" value="ruido"><label> </label><input type="button" value="Consultar palabras">
+<table>
+<thead>
+	<tr>
+		<th>Numero</th>
+		<th>Operador</th>
+		<th>Descripción</th>
+		<th>Motivo</th>
+		<th>Duración</th>
+		<th>Celular</th>
+	</tr>
+</thead>
+<tbody>
+<tr>
+		<td>2</td>
+		<td>Luis peréz</td> 
+		<td>Hace ruido</td>
+		<td><img src="imagenes/num3.png" alt="motivo 3"></td>
+		<td>13</td>
+		<td>095654123</td>
+	</tr>
+</tbody>
+</table><br>
+<input type="button" value="Distribución de llamadas"><br><br>
+</nav>
+<footer>
+<a href="#banner">ir al tope</a>
+</footer>
+</main>
+
+
+
+</body>
+</html>
